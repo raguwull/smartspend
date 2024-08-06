@@ -1,0 +1,24 @@
+.upper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.upper .left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.upper .left .weekly {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.graphs {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}

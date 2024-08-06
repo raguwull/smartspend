@@ -1,0 +1,8 @@
+<div class="main-container">
+  <div class="title">Quick Actions</div>
+  <div class="actions-container">
+    @for (action of actionsList; track $index) {
+    <app-action [action]="action"></app-action>
+    }
+  </div>
+</div>

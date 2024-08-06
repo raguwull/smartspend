@@ -1,0 +1,23 @@
+<div class="content">
+  <div class="upper-part">
+    <div class="left-part">
+      <div class="title">This Week Spend</div>
+      <div class="categories">
+        @for (action of allActions; track $index) {
+        <div class="action-icon">
+          <app-action-icon
+            [color]="action.color"
+            [icon]="action.icon"
+          ></app-action-icon>
+        </div>
+
+        }
+      </div>
+    </div>
+    <div class="right-part">
+      <div class="amount">{{ 540 | currency : "INR" }}</div>
+      <div class="desc">Total Spend</div>
+    </div>
+  </div>
+  <div class="lower-part">[ graph goes here ]</div>
+</div>

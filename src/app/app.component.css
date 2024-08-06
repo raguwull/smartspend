@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container .left {
+  display: flex;
+  flex-direction: row;
+}
+
+.container .right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px; /* temporary solution */
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

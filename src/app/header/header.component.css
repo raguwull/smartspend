@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .left,
+.container .right {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 20px;
+}
+
+.input-group {
+  background-color: var(--plain-background);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 15px;
+  border-radius: 10px;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn-bubble {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-plain {
+  background-color: var(--plain-background);
+  color: black;
+}
+
+.btn-plain:hover {
+  background-color: rgb(205, 205, 205);
+  color: black;
+}
+
+span {
+  opacity: 0.6;
+}

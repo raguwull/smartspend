@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--nav-bg-color);
+  padding: 15px;
+  border-right: solid 1px var(--border-color);
+}
+
+.btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  padding: 0px;
+}

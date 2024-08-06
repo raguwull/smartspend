@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: var(--nav-bg-color);
+  padding: 15px;
+  border-right: solid 1px var(--border-color);
+  margin-right: 30px;
+}
+
+.logo {
+  width: 90%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.logo-1 {
+  width: 90%;
+  font-size: larger;
+}
+.logo-2 {
+  width: 90%;
+  font-size: small;
+}
+
+.btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  padding: 0px;
+}
+
+.balance-card {
+  background-color: var(--primary-color);
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+  border-radius: var(--component-radius);
+  padding: 10px 30px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.current-card {
+  background: radial-gradient(
+      circle at 20% 20%,
+      var(--red) 0%,
+      rgba(255, 109, 99, 0) 80%
+    ),
+    radial-gradient(circle at 80% 80%, var(--blue) 0%, rgba(72, 7, 234, 0) 80%);
+  width: 200px;
+  height: 120px;
+  margin: 10px;
+  border-radius: var(--component-radius);
+  padding: 20px 30px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+}
+
+.sub-title {
+  color: var(--red);
+  font-size: x-small;
+  display: block;
+  width: 90%;
+}
+
+.latest {
+  border-bottom: solid 1px var(--border-color);
+  padding: 10px;
+}
+.balance-title {
+  font-size: smaller;
+}
+
+.balance-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.balance-card .balance-container .fa-money {
+  font-size: 50px;
+}
+
+.balance-card .balance-container .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.balance-card .balance-container .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.right .balance {
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.right .balance-desc {
+  font-size: x-small;
+}

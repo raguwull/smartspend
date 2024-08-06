@@ -1,0 +1,14 @@
+.fa {
+  font-size: x-large;
+}
+
+.icon-container {
+  height: var(--action-size);
+  width: var(--action-size);
+  border-radius: var(--action-size);
+  color: var(--plain-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

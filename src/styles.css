@@ -1,0 +1,49 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css");
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --red: #fd4438;
+  --blue: #4807ea;
+  --yellow: #f2c94c;
+  --light-blue: #56ccf2;
+  --orange: #f2994a;
+  --green: #27ae60;
+  --pink: #ef5da8;
+  --purple: #9b51e0;
+  --dark-green: #219653;
+  --brown: #452f02;
+
+  --primary-color: #ffc248;
+  --primary-dark-color: #dca02a;
+  --icon-background: #e7e7e7;
+  --plain-background: #ffff;
+  --nav-bg-color: #fcfcf4;
+  --border-color: rgb(208, 208, 208);
+
+  --action-size: 50px;
+
+  --component-radius: 15px;
+}
+
+body {
+  background-color: var(--icon-background);
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--primary-dark-color);
+}
+
+.sub-title {
+  color: var(--red);
+  font-size: x-small;
+  display: block;
+}

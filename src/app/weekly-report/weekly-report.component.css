@@ -1,0 +1,64 @@
+.content {
+  background-color: var(--plain-background);
+  width: fit-content;
+  padding: 20px;
+  border-radius: var(--component-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.upper-part {
+  border-bottom: solid 1px var(--icon-background);
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.lower-part {
+  padding-top: 10px;
+}
+
+.upper-part .left-part {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.upper-part .right-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--icon-background);
+  border-radius: 20px;
+  padding: 20px;
+  gap: 10px;
+}
+
+.upper-part .right-part .amount {
+  font-weight: bolder;
+  color: black;
+  font-size: x-large;
+}
+
+.upper-part .right-part .desc {
+  font-size: smaller;
+}
+
+.title {
+  font-weight: 500;
+  font-size: larger;
+}
+.categories {
+  display: flex;
+  flex-direction: row;
+}
+.action-icon {
+  transform: scale(0.5);
+  margin: 5px -15px;
+  cursor: pointer;
+}

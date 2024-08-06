@@ -1,0 +1,23 @@
+.container {
+  background-color: var(--plain-background);
+  border-radius: var(--component-radius);
+  padding: 20px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-size: medium;
+}
+
+.amount {
+  font-size: large;
+  font-weight: 700;
+}
+
+.percent {
+  font-size: small;
+  font-weight: 600;
+}

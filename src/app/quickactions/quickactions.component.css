@@ -1,0 +1,20 @@
+.main-container {
+  background-color: var(--plain-background);
+  border-radius: var(--component-radius);
+  width: fit-content;
+  padding: 20px;
+}
+
+.actions-container {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  overflow: auto;
+}
+
+.title {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px var(--icon-background);
+}
