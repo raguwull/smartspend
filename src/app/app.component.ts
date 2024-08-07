@@ -13,6 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { DisplayComponent } from './display/display.component';
 import { LastMonthComponent } from './last-month/last-month.component';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -29,7 +30,7 @@ import { LastMonthComponent } from './last-month/last-month.component';
     HeaderComponent,
     NavbarComponent,
     DisplayComponent,
-    LastMonthComponent,
+    LastMonthComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
