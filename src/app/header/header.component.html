@@ -4,15 +4,21 @@
       <input type="text" placeholder="Search Expense" />
       <i class="fa fa-search"></i>
     </div>
-    <button class="btn">+ App Expense</button>
+    <button class="btn" [routerLink]="['/new-expense']">
+      <i class="fa fa-plus"></i> Add Expense
+    </button>
   </div>
   <div class="right">
-    <button class="btn btn-bubble">
+    <button class="btn btn-bubble" [routerLink]="['/notifications']">
       <i class="fa fa-bell"></i>
+      <span class="notification"></span>
     </button>
-    <button class="btn btn-bubble btn-plain">
-      <i class="fa fa-user"></i>
-      <span>Profile</span>
+    <button class="btn btn-bubble" [routerLink]="['/profile']">
+      <img
+        class="image"
+        src="https://media.istockphoto.com/id/1317804578/photo/one-businesswoman-headshot-smiling-at-the-camera.jpg?s=612x612&w=0&k=20&c=EqR2Lffp4tkIYzpqYh8aYIPRr-gmZliRHRxcQC5yylY="
+        alt="Profile pic"
+      />
     </button>
   </div>
 </div>

@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-last-month',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './last-month.component.html',
-  styleUrl: './last-month.component.css'
+  styleUrl: './last-month.component.css',
 })
-export class LastMonthComponent {
-
-}
+export class LastMonthComponent {}

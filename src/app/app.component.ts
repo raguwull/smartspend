@@ -12,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DisplayComponent } from './display/display.component';
 import { LastMonthComponent } from './last-month/last-month.component';
+import { HomeComponent } from "./home/home.component";
 
 @Component({
   selector: 'app-root',
@@ -30,7 +31,8 @@ import { LastMonthComponent } from './last-month/last-month.component';
     NavbarComponent,
     DisplayComponent,
     LastMonthComponent,
-  ],
+    HomeComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

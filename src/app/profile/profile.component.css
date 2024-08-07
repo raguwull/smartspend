@@ -1,0 +1,157 @@
+:root {
+  --plain-background: #f7f7f7;
+  --nav-bg-color: #ffffff;
+  --component-radius: 12px;
+  --primary-color: #6c63ff;
+  --secondary-color: #ff6f61;
+  --text-color: #333333;
+  --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eaeaea;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  gap: 40px;
+}
+
+.main-container .left {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--plain-background);
+  border-radius: var(--component-radius);
+  margin: 20px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  box-shadow: var(--box-shadow);
+  height: 85vh;
+  overflow: auto;
+  padding: 10px;
+}
+
+.bank-account-card {
+  background-color: #fff;
+  border-radius: var(--component-radius);
+  box-shadow: var(--box-shadow);
+  padding: 0px 20px;
+}
+
+.bank-account-card h2 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  border-bottom: solid 1px var(--border-color);
+  padding-bottom: 10px;
+}
+
+.account-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.account-group i {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-right: 15px;
+}
+
+.account-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-title {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.account-value {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.main-container .right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  margin-left: 0px;
+  gap: 40px;
+  background-color: var(--nav-bg-color);
+  border-radius: var(--component-radius);
+  padding: 20px;
+  margin-bottom: 50px;
+  box-shadow: var(--box-shadow);
+  height: fit-content;
+}
+
+.main-container .right .upper,
+.main-container .right .lower {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.lower {
+  border: solid 1px var(--border-color);
+  border-radius: var(--component-radius);
+}
+.image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  width: 100%;
+  max-width: 350px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: var(--component-radius);
+  box-shadow: var(--box-shadow);
+  transition: box-shadow 0.3s ease;
+}
+
+.fa {
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: solid 1px var(--border-color);
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+}

@@ -1,6 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ActionMenu } from './action.model';
-import { ActionIconComponent } from "../action-icon/action-icon.component";
+import { ActionIconComponent } from '../action-icon/action-icon.component';
 
 @Component({
   selector: 'app-action',
@@ -11,4 +11,8 @@ import { ActionIconComponent } from "../action-icon/action-icon.component";
 })
 export class ActionComponent {
   @Input() action!: ActionMenu;
+  @Output() emitAction = new EventEmitter();
+  onClick() {
+    this.emitAction.emit(this.action);
+  }
 }

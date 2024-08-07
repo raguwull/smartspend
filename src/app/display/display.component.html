@@ -18,6 +18,26 @@
   </div>
 
   <div class="sub-title">ATM CARD</div>
-  <div class="current-card">Current Card</div>
-  <div class="sub-title latest">LATEST ACTIVITY</div>
+  <div class="current-card">
+    <div class="row-1">
+      <div class="currency-symbol">&#8360;</div>
+      <div>Current Card</div>
+    </div>
+    <div class="row-2">{{ 549034554309 }}</div>
+    <div class="row-3">
+      <span>CARD HOLDER</span>
+      <span class="user-name">{{ "Alien Pixels".toLocaleUpperCase() }}</span>
+      <span></span>
+    </div>
+  </div>
+  <div class="title">
+    <div class="sub-title">LATEST ACTIVITY</div>
+    <div
+      class="view-all"
+      [routerLink]="['/monthly-activities']"
+      routerLinkActive="router-link-active"
+    >
+      View All
+    </div>
+  </div>
 </div>

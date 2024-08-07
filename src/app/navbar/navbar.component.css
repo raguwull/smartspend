@@ -15,4 +15,45 @@
   width: 40px;
   border-radius: 40px;
   padding: 0px;
+  background-color: var(--nav-bg-color);
+  color: black;
+  border: solid 1px var(--border-color);
+  transition: transform 0.2s ease-in-out;
+}
+.btn:hover {
+  background-color: var(--nav-bg);
+  color: black;
+  border: none;
+  transform: scale(1.2);
+}
+.logo {
+  cursor: pointer;
+}
+.logo img {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
+.selected-icon {
+  background-color: var(--primary-color);
+  transform: scale(1.2);
+  border: none;
+  color: white;
+}
+
+.selected-icon::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 40px;
+  right: -10px;
+  top: 0;
+  bottom: 0;
+  margin-left: 10px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
 }

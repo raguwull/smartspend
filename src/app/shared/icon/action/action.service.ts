@@ -40,14 +40,62 @@ export class ActionService {
     {
       id: 'Travel',
       color: 'purple',
-      icon: 'car',
+      icon: 'road',
       title: 'Travel',
     },
     {
       id: 'Service',
       color: 'dark-green',
-      icon: 'bicycle',
+      icon: 'motorcycle',
       title: 'Service',
+    },
+    {
+      id: 'Food',
+      color: 'pink',
+      icon: 'cutlery',
+      title: 'Food',
+    },
+    {
+      id: 'Medicine',
+      color: 'red',
+      icon: 'medkit',
+      title: 'Medicine',
+    },
+    {
+      id: 'Hotel',
+      color: 'brown',
+      icon: 'bed',
+      title: 'Hotel',
+    },
+    {
+      id: 'Electricity',
+      color: 'light-blue',
+      icon: 'plug',
+      title: 'Electricity',
+    },
+    {
+      id: 'Film',
+      color: 'green',
+      icon: 'film',
+      title: 'Film',
+    },
+    {
+      id: 'Shop',
+      color: 'yellow',
+      icon: 'shopping-bag',
+      title: 'Shop',
+    },
+    {
+      id: 'Education',
+      color: 'purple',
+      icon: 'graduation-cap',
+      title: 'Education',
+    },
+    {
+      id: 'Garden',
+      color: 'orange',
+      icon: 'leaf',
+      title: 'Garden',
     },
   ];
   public getActions() {

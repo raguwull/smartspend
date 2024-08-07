@@ -1,2 +1,7 @@
-<app-action-icon [color]="action.color" [icon]="action.icon"></app-action-icon>
-<div class="title">{{ action.title }}</div>
+<div class="container" (click)="onClick()">
+  <app-action-icon
+    [color]="action.color"
+    [icon]="action.icon"
+  ></app-action-icon>
+  <div class="title">{{ action.title }}</div>
+</div>

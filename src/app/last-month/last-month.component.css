@@ -1,4 +1,20 @@
-.sub-title {
+.container {
+  margin-top: 20px;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 20px;
   border-bottom: solid 1px var(--border-color);
-  padding-bottom: 10px;
+}
+
+.view-all {
+  font-size: x-small;
+  cursor: pointer;
+}
+
+.view-all:hover {
+  color: var(--blue);
 }

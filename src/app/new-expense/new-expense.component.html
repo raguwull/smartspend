@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="button-group">
+    <div class="left">Add New Expense</div>
+    <div class="right">
+      <button
+        class="btn btn-cancel"
+        [routerLink]="['/home']"
+        routerLinkActive="router-link-active"
+      >
+        Cancel
+      </button>
+      <button class="btn btn-add">Add Expense</button>
+    </div>
+  </div>
+  <div class="group">
+    <div class="scrollable-entries col-2">
+      <div class="form-control">
+        <label for="entry">Expense Name</label>
+        <input type="text" />
+      </div>
+      <div class="form-control">
+        <label for="entry">Description</label>
+        <textarea type="text"></textarea>
+      </div>
+      <div class="form-control">
+        <label for="entry">Payment Method</label>
+        <input type="text" />
+      </div>
+      <div class="form-control">
+        <label for="entry">Date</label>
+        <input type="date" />
+      </div>
+      <div class="form-control">
+        <label for="entry">Amount</label>
+        <input type="number" />
+      </div>
+      <div class="form-control">
+        <label for="entry">Category</label>
+        <input type="text" readonly [value]="selectedAction" />
+      </div>
+    </div>
+    <div class="categories col-1">
+      <div class="title-group">
+        <div class="left">Select a Category</div>
+        <div class="right">
+          <button class="bubble-button">
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="actions-container">
+        @for (action of actionsList; track $index) {
+        <app-action
+          [action]="action"
+          (emitAction)="onAction($event)"
+        ></app-action>
+        }
+      </div>
+    </div>
+  </div>
+</div>

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
+  justify-content: center;
 }
 
 .upper .left {
@@ -13,6 +14,7 @@
 .upper .left .weekly {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   gap: 20px;
 }
 
@@ -20,5 +22,5 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
-  justify-content: center;
+  justify-content: space-around;
 }

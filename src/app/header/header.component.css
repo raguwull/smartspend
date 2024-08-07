@@ -3,13 +3,15 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  border-bottom: solid 1px var(--border-color);
+  margin-bottom: 20px;
 }
 .container .left,
 .container .right {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  margin: 20px;
+  margin: 0px 10px 20px;
 }
 
 .input-group {
@@ -20,10 +22,13 @@
   justify-content: center;
   padding: 0px 15px;
   border-radius: 10px;
+  width: 300px;
 }
 
 input {
   border: none;
+  width: 100%;
+  height: 90%;
 }
 
 input:focus {
@@ -31,24 +36,39 @@ input:focus {
 }
 
 .btn-bubble {
+  height: 40px;
+  width: 40px;
   border-radius: 20px;
   display: flex;
   flex-direction: row;
   gap: 10px;
   justify-content: center;
   align-items: center;
-}
-
-.btn-plain {
-  background-color: var(--plain-background);
-  color: black;
-}
-
-.btn-plain:hover {
-  background-color: rgb(205, 205, 205);
-  color: black;
+  position: relative;
 }
 
 span {
   opacity: 0.6;
+}
+
+.image {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.3);
+}
+.notification {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 6px;
+  width: 6px;
+  border-radius: 6px;
+  background-color: var(--red);
+  opacity: 1;
 }

@@ -1,0 +1,128 @@
+.container {
+  border-radius: 10px;
+}
+.button-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px var(--border-color);
+}
+.right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.left {
+  color: black;
+  font-size: larger;
+}
+.btn-cancel {
+  background-color: var(--plain-background);
+  color: black;
+}
+.btn-cancel:hover {
+  background-color: rgb(210, 210, 210);
+}
+.scrollable-entries,
+.categories {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  margin: 30px;
+  border-radius: 10px;
+  background-color: var(--plain-background);
+}
+.scrollable-entries {
+  overflow: auto;
+  gap: 20px;
+  background-color: var(--nav-bg-color);
+  padding: 20px;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.col-1 {
+  flex: 1;
+  padding: 10px 20px;
+}
+.col-2 {
+  flex: 2;
+}
+
+.bubble-button {
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.title-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: solid 1px var(--border-color);
+}
+.title-group .left {
+  font-size: medium;
+}
+
+.actions-container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  height: 100%;
+  overflow: auto;
+  padding-right: 0px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+}
+label {
+  font-size: small;
+  margin: 5px;
+}
+input,
+textarea {
+  background-color: var(--nav-bg);
+  border: none;
+  outline: none;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  color: rgb(77, 77, 77);
+}
+
+textarea {
+  height: 60px;
+}
+
+.category {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--icon-background);
+  border-radius: 10px;
+}
+
+.category-name {
+  font-size: medium;
+}
