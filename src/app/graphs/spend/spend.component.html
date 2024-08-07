@@ -1,6 +1,12 @@
 <div class="container">
-  <div class="title">Spend this week</div>
+  <div class="title">Monthly Spend</div>
   <div class="amount">{{ 540 | currency : "INR" }}</div>
   <div class="percent">2.5%</div>
-  <div class="graph">[ graph goes here ]</div>
+  <div
+    class="view-graph"
+    [routerLink]="['/charts']"
+    routerLinkActive="router-link-active"
+  >
+    View graph
+  </div>
 </div>

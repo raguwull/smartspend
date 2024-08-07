@@ -1,4 +1,4 @@
-:host {
+.container {
   background-color: var(--plain-background);
   width: fit-content;
   height: fit-content;
@@ -20,10 +20,11 @@
 :host .title {
   color: var(--red);
   font-size: small;
+  margin-bottom: 10px;
 }
 
 .btn {
-  margin-top: 10px;
+  margin-top: 20px;
   width: 100%;
 }
 

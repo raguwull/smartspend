@@ -2,5 +2,11 @@
   <div class="title">Spending Trend</div>
   <div class="amount">{{ 87 }}%</div>
   <div class="percent">4.5%</div>
-  <div class="graph">[ graph goes here ]</div>
+  <div
+    class="view-graph"
+    [routerLink]="['/charts']"
+    routerLinkActive="router-link-active"
+  >
+    View graph
+  </div>
 </div>

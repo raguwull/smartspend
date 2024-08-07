@@ -1,7 +1,7 @@
 <div class="content">
   <div class="upper-part">
     <div class="left-part">
-      <div class="title">This Week Spend</div>
+      <div class="title">{{ "This Week Spend".toLocaleUpperCase() }}</div>
       <div class="categories">
         @for (action of allActions; track $index) {
         <div class="action-icon">
@@ -19,5 +19,7 @@
       <div class="desc">Total Spend</div>
     </div>
   </div>
-  <div class="lower-part">[ graph goes here ]</div>
+  <div class="lower-part">
+    <app-weekly-expense-graph></app-weekly-expense-graph>
+  </div>
 </div>

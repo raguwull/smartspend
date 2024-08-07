@@ -1,0 +1,84 @@
+{
+  "weeklyspending": [
+    {
+      "day": "M",
+      "amount": 1000
+    },
+    {
+      "day": "T",
+      "amount": 200
+    },
+    {
+      "day": "W",
+      "amount": 300
+    },
+    {
+      "day": "T",
+      "amount": 500
+    },
+    {
+      "day": "F",
+      "amount": 1700
+    },
+    {
+      "day": "S",
+      "amount": 1000
+    },
+    {
+      "day": "S",
+      "amount": 600
+    }
+  ],
+  "monthlyspending": [
+    {
+      "category": "Home",
+      "amount": 5000
+    },
+    {
+      "category": "Gas",
+      "amount": 6000
+    },
+    {
+      "category": "Security",
+      "amount": 7000
+    },
+    {
+      "category": "Videos",
+      "amount": 8000
+    },
+    {
+      "category": "Games",
+      "amount": 9000
+    },
+    {
+      "category": "Travel",
+      "amount": 10000
+    },
+    {
+      "category": "Service",
+      "amount": 11000
+    }
+  ],
+  "spendingtrend": [
+    {
+      "week": "week1",
+      "current_month_amount": 1000,
+      "previous_month_amount": 2000
+    },
+    {
+      "week": "week2",
+      "current_month_amount": 2000,
+      "previous_month_amount": 1800
+    },
+    {
+      "week": "week3",
+      "current_month_amount": 1500,
+      "previous_month_amount": 1200
+    },
+    {
+      "week": "week4",
+      "current_month_amount": 2800,
+      "previous_month_amount": 1300
+    }
+  ]
+}

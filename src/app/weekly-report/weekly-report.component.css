@@ -1,7 +1,7 @@
 .content {
   background-color: var(--plain-background);
   width: fit-content;
-  padding: 20px;
+  padding: 10px 15px;
   border-radius: var(--component-radius);
   display: flex;
   flex-direction: column;
@@ -10,17 +10,14 @@
 }
 
 .upper-part {
-  border-bottom: solid 1px var(--icon-background);
-  padding-bottom: 10px;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 20px;
+  gap: 60px;
 }
 
 .lower-part {
   padding-top: 10px;
+  width: 100%;
 }
 
 .upper-part .left-part {
@@ -34,9 +31,10 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--icon-background);
-  border-radius: 20px;
-  padding: 20px;
-  gap: 10px;
+  border-radius: 10px;
+  padding: 7px;
+  gap: 5px;
+  height: fit-content;
 }
 
 .upper-part .right-part .amount {
@@ -46,12 +44,14 @@
 }
 
 .upper-part .right-part .desc {
-  font-size: smaller;
+  font-size: x-small;
 }
 
 .title {
   font-weight: 500;
-  font-size: larger;
+  font-size: small;
+  color: var(--red);
+  margin-top: 5px;
 }
 .categories {
   display: flex;
@@ -59,6 +59,12 @@
 }
 .action-icon {
   transform: scale(0.5);
-  margin: 5px -17px;
+  margin: 0px -17px;
   cursor: pointer;
+}
+
+#barchart {
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }

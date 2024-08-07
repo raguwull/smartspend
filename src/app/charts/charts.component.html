@@ -1,1 +1,25 @@
-<p>charts works!</p>
+<div class="container">
+  <div class="content">
+    <div class="title">Weekly Expense</div>
+    <div class="chart">
+      <app-weekly-expense-graph
+        [displayLegends]="displayLegends"
+      ></app-weekly-expense-graph>
+    </div>
+  </div>
+  <div class="content">
+    <div class="title">Monthly Trend</div>
+    <div class="chart">
+      <app-comparison-trend-graph></app-comparison-trend-graph>
+    </div>
+  </div>
+  <div class="content">
+    <div class="title">Monthly Expense</div>
+    <div class="chart piechart">
+      <app-monthly-piechart-graph
+        [displayLegends]="displayLegends"
+      ></app-monthly-piechart-graph>
+    </div>
+  </div>
+  <div class="lr"></div>
+</div>

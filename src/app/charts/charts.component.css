@@ -1,0 +1,31 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container .content {
+  background-color: var(--plain-background);
+  margin: 10px;
+  border-radius: var(--component-radius);
+  height: fit-content;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.title {
+  font-weight: 600;
+  font-size: larger;
+  color: var(--primary-color);
+  text-align: center;
+  margin: 10px;
+}
+
+.piechart {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -3,6 +3,7 @@
   border-radius: var(--component-radius);
   width: fit-content;
   padding: 20px;
+  height: 372px;
 }
 
 .actions-container {
