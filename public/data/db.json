@@ -80,5 +80,23 @@
             "current_month_amount":2800,
             "previous_month_amount":1300
         }
+    ],
+    "monthlyincome":[
+        {
+            "source":"Salary",
+            "amount":80000
+        },
+        {
+            "source":"Freelance",
+            "amount":60000
+        },
+        {
+            "source":"Real Estate",
+            "amount":40000
+        },
+        {
+            "source":"business",
+            "amount":50000
+        }
     ]
 }

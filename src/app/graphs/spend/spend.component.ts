@@ -72,7 +72,7 @@ export class SpendComponent implements OnInit{
         options:{
           plugins: {
             legend: {
-              display: false // This hides the legend
+              display: true // This hides the legend
             }
           }
         }
